@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+  
+    <title>Image Editor</title>
+</head>
+<body>
+    
+    <div class="container disable">
+        
+        <h2>Image Editor</h2>
+
+        <div class="wrapper">
+            <div class="left-side">
+
+                <div class="sizes">
+                    <label class="title">Resize</label>
+                    <div class="column">
+                        <div class="column-width">
+                            <label>Width</label>
+                            <input type="number">
+                        </div>
+                        <div class="column-height">
+                            <label>Height</label>
+                            <input type="number">
+                        </div>
+                    </div>
+
+                    <div class="ratio-checkbox">
+                        <input type="checkbox" id="ratio" checked>
+                        <label for="ratio">Lock aspect ratio</label>
+                    </div>
+                </div>
+
+                <div class="filter">
+                    <label class="title">Filters</label>
+                    <div class="options">
+                        <button id="brightness" class="enable">Brightness</button>
+                        <button id="saturation">Saturation</button>
+                        <button id="inversion">Inversion</button>
+                        <button id="grayscale">Grayscale</button>
+                    </div>
+                    <div class="slider">
+                        <div class="filter-info">
+                            <p class="name">Brightness</p>
+                            <p class="value">100%</p>
+                        </div>
+                        <input type="range" value="100" min="0" max="200">
+                    </div>
+                </div>
+
+                <div class="rotate">
+                    <label class="title">Rotate and Flip</label>
+                    <div class="options">
+                        <button id="left"><i class="fa-solid fa-rotate-left"></i></button>
+                        <button id="right"><i class="fa-solid fa-rotate-right"></i></button>
+                        <button id="horizontal"><i class='bx bx-reflect-vertical'></i></button>
+                        <button id="vertical"><i class='bx bx-reflect-horizontal' ></i></button>
+                    </div>
+                </div>
+
+                <div class="compress">
+                    <label class="title">Compress</label>
+                    <button>Compress</button>
+                    <p>*Press it if would you like to compress the uploaded image.</p>
+                </div>
+            </div>
+    
+            <div class="right-side">
+                <img src="upload image.png" alt="preview image">
+            </div>
+    
+        </div>
+
+        <div class="controls">
+            
+            <button class="reset-filter">Reset Filters</button>
+            <!-- <button class="delete-filter">Delete Image</button> -->
+            <div class="btns-right">
+                <input type="file" class="file-input" accept="image/*" hidden>
+                <button class="upload">Upload Image</button>
+                <button class="download">Download</button>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <footer>
+        <p>&copy; Copyright <span id="currentYear"></span> 
+            <a href="https://aboutalis.github.io/aboutalis/" target="_blank">
+                Anastasios Periklis Boutalis</a>. All rights reserved.</p>
+    </footer>
+    
+    <script src="scriptYear.js"></script>
+    <script src="editor.js"></script>
+    
+</body>
+</html>
