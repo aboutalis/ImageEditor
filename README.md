@@ -35,3 +35,8 @@ This GitHub repository contains an image editor project implemented using HTML, 
 - Downloading the edited image.
 
 The image editor project provides a user-friendly interface for editing images directly in the web browser. It allows users to perform various image editing tasks easily and efficiently.
+
+<p align="center">
+  <img src="https://github.com/aboutalis/ImageEditor/assets/132292767/afd9cb0f-4a5f-4964-983a-760d0f267dd9" alt="immage-editor">
+</p>
+
